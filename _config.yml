@@ -1,0 +1,27 @@
+# Site Settings
+title: "Cem Baysal"
+description: "Personal website of Cem Baysal, Computer Engineering student at MEF University."
+url: "https://cembaysal.github.io"  
+author:
+  name: "Cem Baysal"
+
+# Build Settings
+markdown: kramdown
+theme: jekyll-theme-minimal  
+
+# Exclude unnecessary files from build
+exclude:
+  - README.md
+
+# SEO Settings
+permalink: /:categories/:title/
+meta:
+  charset: "UTF-8"
+  viewport: "width=device-width, initial-scale=1, shrink-to-fit=no"
+  author: "Cem Baysal"
+  description: "A Computer Engineering student passionate about web and mobile app development."
+
+# Social Media Links
+linkedin_url: "https://www.linkedin.com/in/cembaysal/"
+email: "baysalc@mef.edu.tr"
+github_username: "cembaysal"
