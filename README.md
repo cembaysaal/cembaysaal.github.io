@@ -4,4 +4,4 @@ This repository contains the source code for Cem Baysal's personal website. The 
 
 ## Contact
 
-For any inquiries or feedback, you can reach out to Cem Baysal via [LinkedIn](https://www.linkedin.com/in/cembaysal/) or by sending an [email](mailto:baysalc@mef.edu.tr).
+For any inquiries or feedback, you can reach me via [LinkedIn](https://www.linkedin.com/in/cembaysal/) or by sending an [email](mailto:baysalc@mef.edu.tr).
