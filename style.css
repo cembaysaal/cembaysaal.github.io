@@ -18,17 +18,18 @@ nav ul {
     list-style-type: none;
     background-color: #142435;
     overflow: hidden;
-    margin: 0;
 }
 
 nav ul li {
-    width: 100%;
-    text-align: left;
+    float: left;
+    width: 12.5%;
+    text-align: center;
 }
 
 nav ul li a {
     display: block;
     color: #6e2121;
+    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     transition: background-color 0.3s;
@@ -61,6 +62,13 @@ a:hover {
     color: #0055aa;
 }
 
+p::first-letter {
+    font-size: 150%;
+    float: left;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
 p {
     text-align: justify;
     font-size: large;
@@ -77,23 +85,39 @@ li:nth-child(even) {
 }
 
 figure img {
-    max-width: 100%;
+    max-width: 30%;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 5px;
     box-shadow: 2px 2px 12px #aaa;
 }
 
+#about img.profile-pic {
+    float: left;
+    margin-right: 30px;
+    max-width: 30%;
+}
+
+#neighbor img.neighbor-pic {
+    float: left;
+    margin-right: 30px;
+    max-width: 20%;
+}
+
 .moods-section #moods {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    flex-wrap: wrap;
 }
 
 .moods-section #moods figure {
-    margin: 5px;
-    width: 100%;
+    margin: 0 5px;
+}
+
+#about::after, #neighbor::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 figcaption {
@@ -101,6 +125,11 @@ figcaption {
     font-style: italic;
     font-size: 20px;
     margin-top: 5px;
+}
+
+.happy-mood-gif, .sad-mood-gif {
+    max-width: 50%;
+    height: auto;
 }
 
 .footer-section {
@@ -126,10 +155,33 @@ figcaption {
     color: #0077b5;
 }
 
-@media screen and (min-width: 600px) {
+.reverse-order {
+    display: flex;
+    flex-direction: column-reverse;
+}
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
     nav ul li {
-        float: left;
-        width: 12.5%;
-        text-align: center;
+        width: 100%;
+        float: none;
+        text-align: left;
+    }
+
+    nav ul li a {
+        padding: 10px 16px;
+    }
+
+    #about img.profile-pic, #neighbor img.neighbor-pic {
+        float: none;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .moods-section #moods {
+        flex-direction: column;
     }
 }
